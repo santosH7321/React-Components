@@ -2,6 +2,9 @@ import "./App.css";
 import Item from "./Components/Item";
 import Dob from "./Components/Dob";
 import Card from "./Components/Card";
+import Nav from "./Components/Nav";
+import Btn from "./Components/Button";
+import Hero from "./Components/Hero";
 
 function App() {
   const response = [
@@ -29,6 +32,11 @@ function App() {
   ];
   return (
     <>
+    <Nav></Nav>
+    <Hero></Hero>
+    <Hero></Hero>
+    {/* <Btn></Btn> */}
+    
     <Card>
     <Item name= {response[0].NameFirst}>Hello Sky</Item>
     <Dob  dobDate={response[0].dobDate} dobMonth={response[0].dobMonth} dobYear={response[0].dobYear} ></Dob>
